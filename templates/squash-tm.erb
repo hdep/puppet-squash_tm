@@ -9,7 +9,7 @@ HTTP_PORT=<%= @port %>
 
 # DataBase parameters
 <% if @db == "mysql" -%>
-DB_URL="jdbc:mysql://<%= @db_server %>:<%= @db_name %>/<%= @db_name %>"
+DB_URL="jdbc:mysql://<%= @db_server %>:<%= @db_port %>/<%= @db_name %>"
 DB_TYPE="mysql"
 <% elsif @db == "postgresql" -%>
 DB_URL="jdbc:postgresql://<%= @db_server %>:<%= @db_port %>/<%= @db_name %>"
