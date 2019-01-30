@@ -40,6 +40,10 @@ class squash_tm (
   package{ 'openjdk-8-jdk':
     ensure => present,
   }
+  service{ 'squash-tm':
+    ensure  => running,
+    require => Package['squash-tm'],
+  }
 
   file{ '/etc/default/squash-tm':
     ensure => present,
