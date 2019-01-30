@@ -33,6 +33,9 @@ class squash_tm (
   package{ 'squash-tm':
     ensure  => present,
   }
+  package{ 'openjdk-8-jdk':
+    ensure => present,
+  }
 
   file{ '/etc/default/squash-tm':
     ensure => present,
