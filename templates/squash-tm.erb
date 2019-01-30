@@ -2,14 +2,14 @@
 # Default settings for Squash. This file is sourced by /bin/bash.
 
 # Extra arguments passed to JVM
-JAVA_ARGS=<%= @java_args %>
+JAVA_ARGS="<%= @java_args %>"
 
 # Port for HTTP connector
 HTTP_PORT=<%= @port %>
 
 # DataBase parameters
 <% if @db = "mysql" -%>
-DB_URL="jdbc:mysql://localhost:3306/squashtm" or "jdbc:postgresql://localhost:5432/squashtm"
+DB_URL="jdbc:mysql://localhost:3306/squashtm"
 DB_TYPE="mysql"
 <% elsif @db = "postgresql" -%>
 DB_URL="jdbc:postgresql://localhost:5432/squashtm"
@@ -19,6 +19,6 @@ DB_URL="jdbc:h2:///var/lib/squash-tm/data/squash-tm"
 DB_TYPE="h2"
 <% end -%>
 
-DB_USERNAME=<%= @db_username %>
-DB_PASSWORD=<%= @db_password %>
+DB_USERNAME="<%= @db_username %>"
+DB_PASSWORD="<%= @db_password %>"
 
