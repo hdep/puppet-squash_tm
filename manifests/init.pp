@@ -1,5 +1,5 @@
 class squash_tm (
-  String $apt_proxy = undef,
+  Optional[String] $apt_proxy = undef,
 
 ){
 
