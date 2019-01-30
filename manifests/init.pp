@@ -22,7 +22,6 @@ class squash_tm (
     location => 'http://repo.squashtest.org/debian',
     release  => 'stretch',
     repos    => 'main',
-    require  => apt::key['squash-tm'],
   }
 
   package{ 'squash-tm':
