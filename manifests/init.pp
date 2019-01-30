@@ -8,7 +8,7 @@ class squash_tm (
   String $db_password         = 'sa',
   String $db_server           = 'localhost',
   String $db_name             = 'squashtm',
-  Integer $db_port            = 3306
+  Integer $db_port            = 3306,
 
 ){
 
