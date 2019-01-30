@@ -2,7 +2,7 @@ class squash_tm (
   Optional[String] $apt_proxy = undef,
   String $apt_key_url         = "http://repo.squashtest.org/repo.squashtest.org.gpg.key",
   String $db                  = 'DB2',
-  Integer $port               = '8080',
+  Integer $port               = 8080,
   String $java_args           = '-Xms128m -Xmx1024m -XX:MaxPermSize=128m -Djava.awt.headless=true',
   String $db_username         = 'sa',
   String $db_password         = 'sa',
