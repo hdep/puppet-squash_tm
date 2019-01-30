@@ -26,6 +26,5 @@ class squash_tm (
 
   package{ 'squash-tm':
     ensure  => present,
-    require => apt::source["squash-tm-${lsbdistcodename}"],
   }
 }
