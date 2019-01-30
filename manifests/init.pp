@@ -32,6 +32,7 @@ class squash_tm (
 
   package{ 'squash-tm':
     ensure  => present,
+    require => Package['openjdk-8-jdk'],
   }
   package{ 'openjdk-8-jdk':
     ensure => present,
