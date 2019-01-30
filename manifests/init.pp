@@ -6,6 +6,7 @@ class squash_tm (
   String $java_args           = '-Xms128m -Xmx1024m -XX:MaxPermSize=128m -Djava.awt.headless=true',
   String $db_username         = 'sa',
   String $db_password         = 'sa',
+  String $db_server           = 'localhost',
 
 ){
 
