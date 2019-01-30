@@ -18,6 +18,11 @@ class squash_tm (
     }
   }
 
+  apt::source { "squash-tm-${lsbdistcodename}":
+    location => 'http://repo.squashtest.org/debian',
+    release  => 'stretch',
+    repos    => 'main',
+  }
 
   package{ 'squash-tm':
     ensure => present,
