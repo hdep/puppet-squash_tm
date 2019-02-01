@@ -1,5 +1,5 @@
 {
-  "name": "hdep-squash_tm",
+  "name": "romgo-squash_tm",
   "version": "0.1.0",
   "author": "Hugo Deprez",
   "summary": "",
@@ -12,7 +12,7 @@
     {
       "operatingsystem": "Debian",
       "operatingsystemrelease": [
-        "8"
+        "9"
       ]
     },
     {
