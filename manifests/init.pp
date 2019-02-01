@@ -17,13 +17,13 @@ class squash_tm (
     apt::key { 'squash-tm':
       id      => '071D30C5671A11F9FC029283417A5213D56D74C7',
       source  => $apt_key_url,
-      options => "http-proxy=$apt_proxy",
+      options => "http-proxy=${apt_proxy}",
     }
   }
   else {
     apt::key { 'squash-tm':
-      id      => '071D30C5671A11F9FC029283417A5213D56D74C7',
-      source  => $apt_key_url,
+      id     => '071D30C5671A11F9FC029283417A5213D56D74C7',
+      source => $apt_key_url,
     }
   }
 
@@ -46,10 +46,10 @@ class squash_tm (
   }
 
   file{ '/etc/default/squash-tm':
-    ensure => present,
-    owner  => root,
-    group  => root,
-    mode   => '0600',
+    ensure  => present,
+    owner   => root,
+    group   => root,
+    mode    => '0600',
     content => template('squash_tm/squash-tm.erb'),
   }
 }
