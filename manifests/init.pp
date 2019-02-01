@@ -49,7 +49,7 @@ class squash_tm (
     ensure => present,
     owner  => root,
     group  => root,
-    mode   => '600',
+    mode   => '0600',
     content => template('squash_tm/squash-tm.erb'),
   }
 }

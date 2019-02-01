@@ -1,14 +1,6 @@
 
 # squash_tm
 
-Welcome to your new module. A short overview of the generated parts can be found in the PDK documentation at https://puppet.com/pdk/latest/pdk_generating_modules.html .
-
-The README template below provides a starting point with details about what information to include in your README.
-
-
-
-
-
 
 
 #### Table of Contents
@@ -24,32 +16,28 @@ The README template below provides a starting point with details about what info
 
 ## Description
 
-Briefly tell users why they might want to use your module. Explain what your module does and what kind of problems users can solve with it.
-
-This should be a fairly short description helps the user decide if your module is what they want.
-
+This module install sqush-tm software on Debian 9 
+https://www.squashtest.org/
 
 ## Setup
 
 ### What squash_tm affects **OPTIONAL**
 
-If it's obvious what your module touches, you can skip this section. For example, folks can probably figure out that your mysql_instance module affects their MySQL instances.
+* /etc/default/squash configuration file
+* Add apt repository and key
+* Install squash-tm package
 
-If there's more that they should know about, though, this is the place to mention:
-
-* Files, packages, services, or operations that the module will alter, impact, or execute.
-* Dependencies that your module automatically installs.
-* Warnings or other important notices.
 
 ### Setup Requirements **OPTIONAL**
 
-If your module requires anything extra before setting up (pluginsync enabled, another module, etc.), mention it here.
+For external database you need to create an empty db and  load the db files ie : 
+cd /usr/share/dbconfig-common/data/squash-tm/install/
+psql -h dbserver -p 5432 -U squashtm -W squashtm < pgsql
 
-If your most recent release breaks compatibility or requires particular steps for upgrading, you might want to include an additional "Upgrading" section here.
 
 ### Beginning with squash_tm
 
-The very basic steps needed for a user to get the module up and running. This can include setup steps, if necessary, or it can be an example of the most basic use of the module.
+include squash_tm
 
 ## Usage
 
