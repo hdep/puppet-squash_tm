@@ -2,9 +2,9 @@
   "name": "romgo-squash_tm",
   "version": "0.1.0",
   "author": "Hugo Deprez",
-  "summary": "",
+  "summary": "Install squash_tm",
   "license": " GPL-3.0-or-later",
-  "source": "",
+  "source": "https://github.com/hdep/puppet-squash_tm",
   "dependencies": [
 
   ],
