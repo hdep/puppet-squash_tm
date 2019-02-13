@@ -31,8 +31,11 @@ https://www.squashtest.org/
 ### Setup Requirements **OPTIONAL**
 
 For external database you need to create an empty db and  load the db files ie : 
+
+```
 cd /usr/share/dbconfig-common/data/squash-tm/install/
 psql -h dbserver -p 5432 -U squashtm -W squashtm < pgsql
+```
 
 
 ### Beginning with squash_tm
