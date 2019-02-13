@@ -1,7 +1,7 @@
 
 # squash_tm
 
-
+[![Build Status](https://travis-ci.org/hdep/puppet-squash_tm.png?branch=master)](https://travis-ci.org/hdep/puppet-squash_tm)
 
 #### Table of Contents
 
