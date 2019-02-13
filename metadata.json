@@ -5,6 +5,8 @@
   "summary": "Install squash_tm",
   "license": "Apache-2.0",
   "source": "https://github.com/hdep/puppet-squash_tm",
+  "project_page": "https://github.com/hdep/puppet-squash_tm",
+  "issues_url": "https://github.com/hdep/puppet-squash_tm/issues",
   "dependencies": [
 
   ],
@@ -13,12 +15,6 @@
       "operatingsystem": "Debian",
       "operatingsystemrelease": [
         "9"
-      ]
-    },
-    {
-      "operatingsystem": "Ubuntu",
-      "operatingsystemrelease": [
-        "16.04"
       ]
     }
   ],
