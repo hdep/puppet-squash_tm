@@ -1,3 +1,38 @@
+# == Class: squesh_tm
+#
+# This class Install squash_tm software
+# === Parameters
+#
+# [*apt_proxy*]
+# Optional String for specifying a proxy for apt
+#
+# [*apt_key_url*]
+# String URL path to apt key
+#
+# [*db*]
+# String type of DB to use must be one of : DB2, mysql or postgresql
+#
+# [*port*]
+# Integer port for java process
+#
+# [*java_args*]
+# String java processus parameters
+#
+# [*db_username*]
+# String database username
+#
+# [*db_password*]
+# String database user password
+#
+# [*db_server*]
+# String database server
+#
+# [*db_name*]
+# String database name
+#
+# [*db_port*]
+# Integer database port
+#
 class squash_tm (
   Optional[String] $apt_proxy = undef,
   String $apt_key_url         = 'http://repo.squashtest.org/repo.squashtest.org.gpg.key',
