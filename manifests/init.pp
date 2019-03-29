@@ -86,5 +86,6 @@ class squash_tm (
     group   => root,
     mode    => '0600',
     content => template('squash_tm/squash-tm.erb'),
+    notify  => Service['squash-tm'],
   }
 }
