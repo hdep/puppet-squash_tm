@@ -33,6 +33,10 @@
 # [*db_port*]
 # Integer database port
 #
+# [*package_ensure*]
+# Status of the package could be : latest, present or held.
+# Default ot held because upgrade of the package is broken.
+#
 class squash_tm (
   Optional[String] $apt_proxy = undef,
   String $apt_key_url         = 'http://repo.squashtest.org/repo.squashtest.org.gpg.key',
@@ -44,6 +48,7 @@ class squash_tm (
   String $db_server           = 'localhost',
   String $db_name             = 'squashtm',
   Integer $db_port            = 3306,
+  String $package_ensure      = 'held',
 
 ){
 
@@ -69,7 +74,7 @@ class squash_tm (
   }
 
   package{ 'squash-tm':
-    ensure  => present,
+    ensure  => $package_ensure,
     require => Package['openjdk-8-jdk'],
   }
   package{ 'openjdk-8-jdk':
