@@ -8,6 +8,7 @@ All notable changes to this project will be documented in this file.
 
 * Config file should notify service #PR1
 * Set the squash-tm package to held beccause upgrade is broken #PR3
+* Update to pdk 1.9 #PR4
 
 ## Release 0.1.1
 
