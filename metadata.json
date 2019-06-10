@@ -8,7 +8,10 @@
   "project_page": "https://github.com/hdep/puppet-squash_tm",
   "issues_url": "https://github.com/hdep/puppet-squash_tm/issues",
   "dependencies": [
-
+    {
+      "name": "puppetlabs/apt",
+      "version_requirement": "5.0.1"
+    }
   ],
   "operatingsystem_support": [
     {
