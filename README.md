@@ -15,7 +15,7 @@
 
 ## Description
 
-This module install sqush-tm software on Debian 9 
+This module install squash-tm software on Debian 9 
 https://www.squashtest.org/
 
 ## Setup
@@ -69,7 +69,8 @@ squash_tm::db_port: 5432
 
 ## Limitations
 
-Only tested for Debian 9 with puppet 5  
+Only tested for Debian 9 with puppet 5.
+Currently this module doesn't support upgrade of squash-tm and set on held the squash-tm package.
 
 ## Development
 
