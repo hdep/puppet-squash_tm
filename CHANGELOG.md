@@ -5,6 +5,7 @@ All notable changes to this project will be documented in this file.
 ## Unreleased changes ##
 
 * Config file should notify service #PR1
+* Set the squash-tm package to held beccause upgrade is broken #PR3
 
 ## Release 0.1.1
 
