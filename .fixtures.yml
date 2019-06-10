@@ -3,5 +3,5 @@
 ---
 fixtures:
   forge_modules:
-      apt: "puppetlabs/apt"
-#     stdlib: "puppetlabs/stdlib"
+     apt: "puppetlabs/apt"
+     stdlib: "puppetlabs/stdlib"

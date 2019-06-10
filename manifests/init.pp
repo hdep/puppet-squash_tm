@@ -52,7 +52,7 @@ class squash_tm (
 
 ){
 
-
+  include apt
   if $apt_proxy {
     apt::key { 'squash-tm':
       id      => '071D30C5671A11F9FC029283417A5213D56D74C7',
