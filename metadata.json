@@ -1,6 +1,6 @@
 {
   "name": "romgo-squash_tm",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "Hugo Deprez",
   "summary": "Install squash_tm",
   "license": "Apache-2.0",
@@ -24,7 +24,7 @@
       "version_requirement": ">= 4.7.0 < 6.0.0"
     }
   ],
-  "pdk-version": "1.7.0",
+  "pdk-version": "1.9.0",
   "template-url": "file://C:/Program Files/Puppet Labs/DevelopmentKit/share/cache/pdk-templates.git",
-  "template-ref": "1.7.0-0-g57412ed"
+  "template-ref": "1.9.0-0-g7281db5"
 }
