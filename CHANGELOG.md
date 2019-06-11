@@ -4,6 +4,9 @@ All notable changes to this project will be documented in this file.
 
 ## Unreleased changes ##
 
+* Add some rspec test #7
+* Add dependency puppetlabs/apt #6 
+
 ## Release 0.1.2
 
 * Config file should notify service #PR1
