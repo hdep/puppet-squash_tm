@@ -4,8 +4,8 @@ All notable changes to this project will be documented in this file.
 
 ## Unreleased changes ##
 
-* Add some rspec test #7
-* Add dependency puppetlabs/apt #6 
+* Add some rspec test #PR7
+* Add dependency puppetlabs/apt #PR6 
 
 ## Release 0.1.2
 
